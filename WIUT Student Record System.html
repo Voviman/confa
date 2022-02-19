@@ -1,0 +1,515 @@
+
+<!-- saved from url=(0033)https://srs.wiut.uz/contract.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml" class="RadForm RadForm_Vista rfdButton rfdScrollBars rfdZone rfdLabel rfdHeading rfdTextbox rfdTextarea rfdFieldset rfdRadio rfdCheckbox rfdGrids"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="shortcut icon" href="https://srs.wiut.uz/_images/_icons/favicon.ico"><link href="./WIUT Student Record System_files/SRS_style20100930.css" rel="stylesheet" type="text/css">
+    <script src="./WIUT Student Record System_files/jquery-1.4.1.min.js.Без названия" type="text/javascript" language="javascript"></script>
+    
+        <script type="text/javascript">
+        function ShowRoles()
+        {
+        var oWnd = $find("ctl00_RadWindow1");
+        oWnd.show();
+        }
+        function HideRoles()
+        {
+        var oWnd = $find("ctl00_RadWindow1");
+        oWnd.close();
+        }
+        function ShowCongrats() {
+            var oWnd = $find("ctl00_rwCongrats");
+            oWnd.show();
+        }
+        function HideCongrats() {
+            var oWnd = $find("ctl00_rwCongrats");
+            oWnd.close();
+        }
+        </script>
+      
+      <script language="javascript" type="text/javascript">
+          $(document).ready(function() {
+
+              $('form').submit(function() {
+                  $(':submit', this).click(function() {
+                      return false;
+                  });
+              });
+
+          });
+    </script>
+    
+    
+
+    <!--[if lt IE 7]>
+    <link href="SRSstyleIE6.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <style>
+        #ctl00_lbncongrats
+        {
+        text-decoration:none; 
+        color:#8fb8d6; 
+        font-family:'Segoe UI', Verdana, Arial; 
+        font-size:16pt; 
+        cursor:pointer;
+        font-weight:bold;
+        }
+        #ctl00_lbncongrats:hover
+        {
+        color:#fff; 
+        }
+    </style>
+<link href="./WIUT Student Record System_files/Telerik.Web.UI.WebResource.axd" type="text/css" rel="stylesheet"><title>
+	WIUT Student Record System
+</title>
+<link rel="stylesheet" href="SRS_style">
+</head>
+<body id="ctl00_body">
+    <form name="aspnetForm" method="post" action="https://srs.wiut.uz/contract.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="ctl00_RadScriptManager1_TSM" id="ctl00_RadScriptManager1_TSM" value=";;System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:en-GB:16997a38-7253-4f67-80d9-0cbcc01b3057:ea597d4b:b25378d2;Telerik.Web.UI:en-GB:9821e2fb-2395-49a7-8336-e4110f37db7d:16e4e7cd:f7645509:22a6274a:86526ba7:874f8ea2:24ee1bba:19620875:33108d14">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ADPi5+YHkZaxT1mtn7aGgCWZNA82QWLrnxDUJLoy9g0Itb/bkgjFrg/IIsFbT/sHsHyL5R0UJoh6d03oqzV95Rk6CbFyfzuVte2secnlHLoebc+geWj919E90kiGx261eGaSNg6N5ekq+8FXtqAhibQ+GofwFgezmaVLKlATMeuHXBpZGBFwyuJBu72MsqY49d+wWxtwI2p152cs6HQO598T8pEFZ231Y5QBrKFfkuO4KjD5ic3nBkZwp3vc8Zp7CnB6Wi9b6ojoXfmQ45xQIVPG04N0LJ2xORHMk5ZSFLo+p3sA8SJ0m7hILYiJgSK1rSYMFwrwJIHFigOnSzkRkfh3wqRawqQ06Anldo6IPrK2Q6hjCbsqQ9IbniCgc/Zu4L6xdKxczEVLUENHDfCuFGIPioRUlLNBzqr/3/nojyjQt3Z3t3bEg6xi48xftw2qCQ3aDB8AtXPYmj1FFBAGKZB2YIwDnh6yZ5CEsBRgleZ02KBkixSLlZHDxT7f4Tfahp2vQUc8D3QSNM6xWwCJ9lGtlyxVX61F3RniyXv4P+aGpfyFDt99h0Tc0M0b22nqsBlQfHjGhvgIbTJONHTRaPYr2llR4GtxVSviMbcexeso4SzO0jrBHaPz/wteTiJo8X45n+K4NQf71Olyy6JZebqboPZmdRmvLDNRwp65JdCg4VNA0WOXq3OeOyfw27Z+wiSbeWhqgKjnBx277bPQvHX3sp8FItMBoCSju/33syhi3LyatNhfdWcpRMLtaWRrmsOEeJiWScDFenpyoIUB8niEjO1HisrJU3LtHhIOUjjEouboYVGQzHEJQgLNZ9X4xTKDYeSOoraT9zSrAw1mIuIlxhfQ2zVteUk0CfBCI4ubvD0uxbDNzyb7uPUWqd1Qxz/ngSYUGnDNKtmyZhgt00y6F6EeQ1MX2q/zjvpBi+sanDt6T1oUW2I6TnuNZ16fSP6yFsmjj5EY8wp8CJ63h4tCT/C5xThrKZg+JFtHxrqJWVEIXQaG9LvOEFl2AOvINDtJ0aY/BxRbW0ZVXr6xrDCPkZ5HecXryz6nL0kzborZTlXAQNl2Hcu3lHmiOI87JvKLvJUa2Ey4GMTQdoPg7yz/Wx56/vh7Kfo1CS5OUmlKT3wxZ4CA1j6ztG02v1334CsMQRotFNwp3yKRb2gbvtNY2Wo2PlfMmOu4TLdn29s+J4Ms94QQSswbmL+Wj6+afgInWEZw2r50jsRAQsInrIBT1DEEtyu6Y/OskusKv1pxsOV4LMJbZBegrLHbvksDl63flDQsbREY3AxnJmQ3GHKSz60X0oL5Sc6iylD8gSTwHLna0l1kD4IuR+VSZC9X6SphsOMTGbyTjJBphg2INs1OXmNlhuCXImcW1aGy4KZZHsm2Qf9+r090lGc+XQIiUgycLUNlbmsAH+rsXQV2PjG+gur2dog7Lv6fOOV72C8BEsL9QMXi3h0lNx4RdvgsPXZuGUJIflZomXXmehwTkUPcrSEHyw+9WRhXvpcHeWnJVHHB0FHF9XDfRain/MKiMTPFzjXPEcjJa8DVt9aYhWxR//VXI12OJL0hRWImSH1Mh/r1zXTvMwDF4cRw06xM3DTTiZDBXhBKwzJZtr199di+QtJjriZu3Qu0R7AhDhDt1p43cSKqecgugsYbcRqTlOtZ/ZlbxgPFsNeh6c3gnIUe2AMK4QH/lrfqbVx2CXc6Typ9xDDgR8t0gNMRFQ6rG+4eABVcqAGZ3EQkYTDxJbDflOwh6X/Ryl6UEzKLOltIGbvtqEFj6Jt9ZG9mxq9nKNQaq50kmEa7Pg5hLi+Vyl2V2N8obiAAyJRNLVa/t5x3V89han+XJuco+PMXdiDXVdfqMu4btepW7GezahnWDbz105CuxvBHej1puoSsWUI9O5JeZlguhz8Ay2czq+pYxln91ReGul4tzirdKv2wW/UrARnDy51hPIund7Y7ChzipdPy">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./WIUT Student Record System_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./WIUT Student Record System_files/Telerik.Web.UI.WebResource(1).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="049BE8FA">
+	<input type="hidden" name="__SCROLLPOSITIONX" id="__SCROLLPOSITIONX" value="0">
+	<input type="hidden" name="__SCROLLPOSITIONY" id="__SCROLLPOSITIONY" value="0">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="MeH0Wmju3+IcvpwtSGU6gtm3+d+944/bzsXiXzZuz26lkKnRejBFERmH3B/gX6z2lEi9E/H+jPXedzNiIuyw5L/UMdtX31rP7ZDPANNlLscF588aQ5QUQ4l2jpmmZVl9RJDeTw==">
+</div>
+    
+     <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$RadScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+    <div id="ctl00_RadFormDecorator1" style="display:none;">
+	<!-- 2010.1.415.20 --><script type="text/javascript">
+//<![CDATA[
+if (typeof(WebForm_AutoFocus) != 'undefined')
+{
+	var old_WebForm_AutoFocus = WebForm_AutoFocus;
+	WebForm_AutoFocus = function(arg)
+	{
+		Sys.Application.add_load(function()
+		{
+			old_WebForm_AutoFocus(arg);
+			WebForm_AutoFocus = old_WebForm_AutoFocus;
+		});
+	}
+}
+if (typeof(Telerik) != 'undefined')
+{
+	if (Telerik.Web.UI.RadFormDecorator)
+	{
+		Telerik.Web.UI.RadFormDecorator.initializePage("ctl00_RadFormDecorator1", "", "Vista", 3583);
+	}
+}
+//]]></script><input id="ctl00_RadFormDecorator1_ClientState" name="ctl00_RadFormDecorator1_ClientState" type="hidden">
+</div>
+         <div style="position:absolute; text-align:center; width:100%; margin-top:10px;">
+            
+        </div>
+        <table height="100%" cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse; text-align:left; margin:0px; line-height:15px; min-width:680px" id="parentTable">
+	        <tbody><tr valign="top">
+                <td colspan="2" height="97">
+                    <div class="header">
+                        <img style="float:left;" src="./WIUT Student Record System_files/srs.bg_01.jpg" alt="WIUT Student Record System" width="446" height="97">
+                        
+                    </div>
+                    <div class="nav" style="margin-right:0; clear:both; margin-left:50px">
+                        <a href="https://srs.wiut.uz/home.aspx">Home Page</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="https://srs.wiut.uz/wap">SRS Mobile</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="http://www.wiut.uz/">University Site</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="http://intranet.wiut.uz/">Intranet</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="https://mail.wiut.uz/owa">Web Mail</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="http://career.wiut.uz/">Career Center</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="https://srs.wiut.uz/contact_us.aspx">Contact us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                        <a href="https://srs.wiut.uz/Bills.aspx">Bills</a>
+                    </div>
+                    <div class="nav" style="float:right; margin-right:70px; margin-left:0">
+                        <a id="ctl00_lbnLogOut" href="javascript:__doPostBack(&#39;ctl00$lbnLogOut&#39;,&#39;&#39;)">Log Out</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                   
+                        <div style="text-align:center; margin:15px auto; border:#666666; border-style:solid; border-width:1px; background:#fff url(_images/grad.png) repeat-x;">
+                            <div class="txtheader"><b>
+                                
+    Contract Details   
+
+                            </b></div>
+                            <div style="padding:20px 0; border-top-color:#FFFFFF; border-top-width:2px; border-top-style:ridge; min-height:350px;">
+                            <div id="maindivpm" style="width:760px; margin:auto; text-align:left">
+                                
+
+    <div>
+        <div>Select Academic Year:</div>
+        <br>
+        <div>
+            
+            <select id="acadYearDDL">
+                
+                    <option value="4">2007/2008</option>
+                
+                    <option value="5">2008/2009</option>
+                
+                    <option value="6">2009/2010</option>
+                
+                    <option value="9">2006/2007</option>
+                
+                    <option value="10">2005/2006</option>
+                
+                    <option value="11">2010/2011</option>
+                
+                    <option value="12">2011/2012</option>
+                
+                    <option value="13">2012/2013</option>
+                
+                    <option value="14">2013/2014</option>
+                
+                    <option value="15">2014/2015</option>
+                
+                    <option value="16">2015/2016</option>
+                
+                    <option value="17">2016/2017</option>
+                
+                    <option value="18">2017/2018</option>
+                
+                    <option value="19">2018/2019</option>
+                
+                    <option value="24">2019/2020</option>
+                
+                    <option value="25">2020/2021</option>
+                
+                    <option value="26" selected="selected">2021/2022</option>
+                
+                    <option value="27">2022/2023</option>
+                
+            </select>
+        </div>
+        <br>
+
+        
+        <a href="javascript:void(0)" class="rfdSkinnedButton"><button type="button" id="submitBtn" class="rfdDecorated" tabindex="-1">Submit</button></a>
+    </div>
+    <br>
+
+    <div id="error" style="display: none;"></div>
+    <br>
+
+    <div id="tableBag" style="display: block;"><table class="tg">
+                <tbody><tr>
+                    <th class="tg-kj8r" rowspan="2">№<br>п/п</th>
+                    <th class="tg-kj8r" rowspan="2">Студент</th>
+                    <th class="tg-9hbo" rowspan="2">Финансовый статус</th>
+                    <th class="tg-9hbo" rowspan="2">Кредиты</th>
+                    <th class="tg-9hbo" rowspan="2">Сумма контракта</th>
+                    <th class="tg-9hbo" rowspan="2">Договор студента</th>
+                    <th class="tg-9hbo" rowspan="2">Остаток с прошлого уч.года</th><th class="tg-9hbo" colspan="2">Оплата</th>
+                </tr>
+                <tr>
+                    <td class="tg-yw4l">Дата</td>
+                    <td class="tg-yw4l">Сумма</td></tr>
+                    
+                
+                <tr>
+                    <td class="tg-yw4l"></td>
+                    <td class="tg-yw4l">SHUKUROV YUSUFJON NOZIMJON O'G'LI
+                    </td>
+                    <td class="tg-yw4l">SELF FINANCED
+                    </td>
+                    <td class="tg-yw4l">140
+                    </td>
+                    <td class="tg-yw4l">34,993,000.00
+                    </td>
+                    <td class="tg-yw4l">Дог. № 2558 B/20 от 27.07.2020 г.
+                    </td>
+                    <td class="tg-yw4l">6,000.00
+                    </td>
+                    <td class="tg-yw4l"></td>
+                    <td class="tg-yw4l"></td></tr>
+                    <tr>
+                        <td class="tg-yw4l"></td>
+                        <td class="tg-yw4l" colspan="4"></td>
+                        <td class="tg-yw4l">Дог. № 2558 B/20 от 27.07.2020 г.
+                        </td>
+                        <td class="tg-yw4l"></td>
+                        <td class="tg-yw4l">17/09/2021 18:05:57
+                        </td>
+                        <td class="tg-yw4l">7,500,000.00
+                        </td></tr>
+                    <tr>
+                        <td class="tg-yw4l"></td>
+                        <td class="tg-yw4l" colspan="7"><b>Итого</b></td>
+                        <td class="tg-yw4l"><b>7,500,000.00</b></td></tr>
+                    <tr>
+                        <td class="tg-yw4l"></td>
+                        <td class="tg-yw4l" colspan="7"><b>Долг</b></td>
+                        <td class="tg-yw4l"><b>-27,487,000.00</b></td></tr></tbody></table></div>
+
+    <script type="text/javascript" src="./WIUT Student Record System_files/jquery-1.11.3.js.Без названия"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("button#submitBtn").click(function () {
+                $("div#error").css("display", "none");
+                $("div#tableBag").css("display", "none");
+                var studentID = "";
+                if ($('#studentIDInput').length)
+                    studentID = $("#studentIDInput").val();
+                //alert("asdf");
+                $.ajax({
+                    type: "POST",
+                    url: "contract.aspx/GetContractInfo",
+                    data: JSON.stringify({
+                        acadYearID: $("select#acadYearDDL").val(),
+                        studentID: studentID
+                    }),
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (data) {
+                        //alert(data.d);
+                        //console.log(data);
+                        var tmp = data.d.split('#');
+                        if (tmp[0] == "success") {
+                            $("div#tableBag").html(tmp[1]);
+                            $("div#tableBag").css("display", "block");
+                        }
+                        else {
+                            $("div#error").html(tmp[1]);
+                            $("div#error").css("display", "block");
+                        }
+                    },
+                    error: function (data) {
+                        //exampleConsole.innerText = 'Save error';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <style type="text/css">
+        .tg  {border-collapse:collapse;border-spacing:0;}
+        .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+        .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+        .tg .tg-kj8r{font-weight:bold;font-size:100%;vertical-align:top}
+        .tg .tg-9hbo{font-weight:bold;vertical-align:top}
+        .tg .tg-yw4l{vertical-align:top}
+    </style>
+
+        
+                            </div>
+                            </div>
+                            <br clear="all">
+                        </div>
+                  
+                </td>
+                <td width="293" valign="top">
+                    <div class="announce">
+                    <div class="txtheader"><b>Personal Information</b></div>
+                        <div class="container" style="background-image:url(_images/gradgrey.png); background-repeat:repeat-x; background-color:#FFFFFF; background-position:left top; border-top-color:#FFFFFF; border-top-width:2px; border-top-style:ridge;">
+                            <div style="text-align:left; padding-left:5px; padding-right:15px; padding-bottom:10px; line-height:15px;">
+                                <div class="imagename" style="padding-top:5px;">
+                                    <div style="float:left; margin-right:5px;">
+                                        <img alt="User Picture" src="./WIUT Student Record System_files/chm.gif" width="64px" height="64px">
+                                    </div>
+                                    <div>
+                                        <a id="ctl00_LinkButton1" href="javascript:__doPostBack(&#39;ctl00$LinkButton1&#39;,&#39;&#39;)"><strong id="ctl00_USERNAME">00009662</strong></a>
+                                    </div>
+                                </div><!--endimagename-->
+                                <div>
+                                    Name: <span id="ctl00_lblfname" style="color:Black;">Yusufjon</span><br>
+                                    Surname: <span id="ctl00_lbllname" style="color:Black;">Shukurov</span><br>
+                                    Role: <span id="ctl00_lblrole">Student</span>
+                                    
+                                </div>
+                            </div>
+                            <div>
+                                
+
+                                <span id="ctl00_quickLinks"><span id="ctl00_quickLinks2">
+                                    <b><a href="https://srs.wiut.uz/contract.aspx" style="color:red; margin-left: 15px; margin-bottom: 10px;">VIEW CONTRACT STATUS</a></b><br>
+                                    <b><a href="https://intranet.wiut.uz/StudentContract" style="margin-left: 15px; margin-bottom: 10px; color: black;">GENERATE INVOICE</a></b><br><br></span>
+
+                                    <b><a href="https://srs.wiut.uz/MyGroupsForStudent.aspx" style="margin-left: 15px; margin-bottom: 10px; color: black;">View Groups </a></b>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="announce">
+                    
+                        
+                    <div class="txtheader"><b>Registrars Office Announcements</b></div>
+                        <div class="container" style="background-image:url(_images/gradgrey.png); background-repeat:repeat-x; background-color:#FFFFFF; background-position:left top; border-top-color:#FFFFFF; border-top-width:2px; border-top-style:ridge;">
+                            <div style="text-align:left; padding-left:25px; padding-right:25px;  padding-bottom:10px;">
+                                
+                                
+                                        
+                                        <div style="padding-bottom:10px; padding-top:10px;">
+                                            <strong><a id="ctl00_ListView1_mini_ctrl0_HyperLink1_mini" href="https://srs.wiut.uz/news_v.aspx?nid=60" style="color:Black;font-weight:bold;">MC Submission Deadlines</a></strong>
+                                            <br>
+                                            <span id="ctl00_ListView1_mini_ctrl0_minitextLabel_mini">MC Submission Deadlines
+
+To the attention of all students!
+MC submi...</span>
+                                            <br>
+                                            <a id="ctl00_ListView1_mini_ctrl0_HyperLink2_mini" href="https://srs.wiut.uz/news.aspx?ndate=04.10.2021">04-Oct-2021</a>
+                                        </div>
+                                    
+                                        <div class="separator"></div>
+                                    
+                                        <div style="padding-bottom:10px; padding-top:10px;">
+                                            <strong><a id="ctl00_ListView1_mini_ctrl2_HyperLink1_mini" href="https://srs.wiut.uz/news_v.aspx?nid=59" style="color:Black;font-weight:bold;">MC Submission Deadlines</a></strong>
+                                            <br>
+                                            <span id="ctl00_ListView1_mini_ctrl2_minitextLabel_mini">MC Submission Deadlines
+
+To the attention of all students!
+MC submi...</span>
+                                            <br>
+                                            <a id="ctl00_ListView1_mini_ctrl2_HyperLink2_mini" href="https://srs.wiut.uz/news.aspx?ndate=06.07.2021">06-Jul-2021</a>
+                                        </div>
+                                    
+                                        <div class="separator"></div>
+                                    
+                                        <div style="padding-bottom:10px; padding-top:10px;">
+                                            <strong><a id="ctl00_ListView1_mini_ctrl4_HyperLink1_mini" href="https://srs.wiut.uz/news_v.aspx?nid=58" style="color:Black;font-weight:bold;">MC Submission Deadlines</a></strong>
+                                            <br>
+                                            <span id="ctl00_ListView1_mini_ctrl4_minitextLabel_mini">MC Submission Deadlines  
+
+To the attention of all students!
+MC sub...</span>
+                                            <br>
+                                            <a id="ctl00_ListView1_mini_ctrl4_HyperLink2_mini" href="https://srs.wiut.uz/news.aspx?ndate=24.02.2021">24-Feb-2021</a>
+                                        </div>
+                                    
+                                        <a href="https://srs.wiut.uz/news.aspx">View all announcements</a>
+                                    
+                            </div>    
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+	            <td colspan="2" height="27" valign="bottom">
+	                <div id="ctl00_footer" class="footer">© <span id="ctl00_year">2021</span> WIUT</div>
+    	        </td>
+            </tr>
+        </tbody></table>
+<div id="ctl00_rwCongrats" style="border-style:None;display:none;">
+	<div id="ctl00_rwCongrats_C">
+		
+    <div style="margin:0 20px; font-family:Segoe UI, Verdana, Arial; font-size:10pt; text-align:justify;">
+        <br><p>Dear Students and Colleagues,</p><br>
+        <p>
+            The year 2010 is leaving us soon. For us it was the first year of running SRS 
+            - a system that is being constantly developing for more that a year. It's been a tuff year. 
+            The year of Revalidation =D, exam preparation, and the year when we met <b>Awesome</b> 
+            people who have given us many tender memories.
+        </p><br>
+        <p>
+            SRS Development Team and I personally, would like to wish all of us, 
+            to live the next year of Rabbit, at least a bit better than this one :)
+            Not because this year was bad, but just for the sake of continious improvement :D
+            Let us hope that the most sinsere dream we have today, will awesomely surely come true next year.
+            We wish health, unity and happiness for ourselves, you and your closest ones ;)
+            Let our homes be full of warmth, joy and happyness during these cold days :)
+            Let's have a memorable celebration with Family and Friends!
+            Happy New Year!!!
+        </p><br><br>
+        <p style="text-align:right">
+            Sinserelly yours,<br>
+            SRS Development Team
+        </p>
+    </div>
+    
+	</div><input id="ctl00_rwCongrats_ClientState" name="ctl00_rwCongrats_ClientState" type="hidden" autocomplete="off">
+</div>
+        <div id="ctl00_RadWindow1" style="border-style:None;display:none;">
+	<div id="ctl00_RadWindow1_C">
+		
+                <table>
+                    <tbody><tr>
+                        <td colspan="2" style="padding-top:5">
+                        <table id="ctl00_RadWindow1_C_rbnroles" border="0" style="font-weight:normal;text-decoration:none;width:300px;font-size:8pt; font-family:Verdana; margin:auto 8px;">
+			<tbody><tr>
+				<td><input id="ctl00_RadWindow1_C_rbnroles_0" type="radio" name="ctl00$RadWindow1$C$rbnroles" value="Student_View2.aspx" checked="checked"><label for="ctl00_RadWindow1_C_rbnroles_0">Student</label></td>
+			</tr>
+		</tbody></table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><a href="javascript:void(0)" class="rfdSkinnedButton"><input type="submit" name="ctl00$RadWindow1$C$btnselectrole" value="Select" id="ctl00_RadWindow1_C_btnselectrole" class="rfdDecorated" tabindex="-1"></a>
+                        <a href="javascript:void(0)" class="rfdSkinnedButton"><input type="button" id="Button2" value="Cancel" onclick="HideRoles()" class="rfdDecorated" tabindex="-1"></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center" style="line-height:25px;">*Note: You can change your role anytime you want</td>
+                    </tr>
+                </tbody></table>
+            
+	</div><input id="ctl00_RadWindow1_ClientState" name="ctl00_RadWindow1_ClientState" type="hidden" autocomplete="off">
+</div>
+     
+    
+    
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+
+theForm.oldSubmit = theForm.submit;
+theForm.submit = WebForm_SaveScrollPositionSubmit;
+
+theForm.oldOnSubmit = theForm.onsubmit;
+theForm.onsubmit = WebForm_SaveScrollPositionOnSubmit;
+Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadFormDecorator, {"clientStateFieldID":"ctl00_RadFormDecorator1_ClientState","decoratedControls":3583,"enabled":true,"skin":"Vista"}, null, null, $get("ctl00_RadFormDecorator1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":true,"animation":2,"behaviors":4,"clientStateFieldID":"ctl00_rwCongrats_ClientState","destroyOnClose":true,"formID":"aspnetForm","height":"520px","iconUrl":"","keepInScreenBounds":true,"minimizeIconUrl":"","modal":true,"name":"rwCongrats","openerElementID":"lbncongrats","skin":"Office2007","title":"Happy New Year Dear All","visibleStatusbar":false,"width":"400px"}, null, null, $get("ctl00_rwCongrats"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadWindow, {"_dockMode":true,"animation":2,"autoSize":true,"behaviors":4,"clientStateFieldID":"ctl00_RadWindow1_ClientState","destroyOnClose":true,"formID":"aspnetForm","iconUrl":"","keepInScreenBounds":true,"minimizeIconUrl":"","modal":true,"name":"RadWindow1","openerElementID":"lbnchangerole","skin":"Default","title":"Please, select the role you want to use:","visibleStatusbar":false}, null, null, $get("ctl00_RadWindow1"));
+});
+//]]>
+</script>
+</form>    
+
+
+</body></html>
